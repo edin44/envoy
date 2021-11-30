@@ -214,6 +214,7 @@ public:
 
   /**
    * Called when the active encoder has completed encoding the outbound half of the stream.
+   * May delete this ConnectionImpl object.
    */
   virtual void onEncodeComplete() PURE;
 
